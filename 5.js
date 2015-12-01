@@ -2,7 +2,14 @@
 $(function() {
 
   $("#do-something").on("click", function(event) {
-    // Do something
+    event.preventDefault();
+    console.log("YAY!");
   });
+
+  $("#do-something").on("mouseover", function(event) {
+    event.preventDefault();
+    console.log("BOO!");
+  });
+
 
 })

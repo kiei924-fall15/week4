@@ -9,11 +9,23 @@ $(function() {
     name: "Brian",
     location: "Chicago, IL",
     status: "Teaching KIEI-924 at Kellogg",
-    friends: ["Benne", "Jeff", "Erinn"]
+    friends: ["Benne", "Jeff", "Erinn", "John"],
+    logNumberOfFriends: function() {
+      console.log(this.friends.length);
+    },
+    alertCurrentStatus: function() {
+      window.alert(this.status);
+    } 
   };
 
+  brian.status = "Eating tacos";
+
+  brian.rideUnicorn = function() {
+    alert("YAY!!!");
+  }
+
   // Use the two methods here
-  // brian.logNumberOfFriends();
-  // brian.alertCurrentStatus();
+  brian.logNumberOfFriends();
+  brian.alertCurrentStatus();
 
 })

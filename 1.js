@@ -5,10 +5,10 @@ $(function() {
   var yell = function(string) {
     // change this so it works
     // .toUpperCase() is a built-in function
-    return "sad trombone";
+    return string.toUpperCase() + "!!!!!!!!!!!!!!";
   }
-
-  var theMostAwesomeFood = "tacos";
-
-  window.alert(yell(theMostAwesomeFood));
+  
+  window.alert(yell("tacos"));
+  window.alert(yell("bacon"));
+  window.alert(yell("snickers"));
 })
